@@ -1,0 +1,50 @@
+.dark .custom-controls {
+    background: #111;
+    color: #eee;
+    border: 1px solid #888;
+    box-shadow: 0 4px 12px -6px #777;
+  }
+  
+  .trigger {
+    position: absolute;
+    bottom: .25em;
+    right: .25em;
+  }
+  
+  .custom-controls.open {
+    width: 12rem;
+    height: 7rem;
+    border-radius: 12px;
+  
+    transition: width .5s linear,
+                height .5s linear .5s,
+                border-radius 1s linear,
+                opacity 1s linear 1s;
+  }
+  
+  .custom-controls .trigger i {
+    font-size: 1.4em;
+  }
+  
+  .custom-controls .menu-open {
+    display: none;
+  }
+  
+  .custom-controls form {
+    visibility: hidden;
+    white-space: nowrap;
+  }
+  
+  .open form {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .open .menu-open {
+    display: block;
+  }
+  
+  .open .menu-closed {
+    display: none;
+  }
