@@ -12,7 +12,7 @@ function App() {
     <div
       id="app"
       aria-label="app"
-      className={darkMode ? "dark" : "light"}
+      className= {darkMode ? "dark" : "light"}
       style={largeFont ? { fontSize: "24px" } : { fontSize: "16px" }}
     >
       {/* pass above-defined state as props */}
